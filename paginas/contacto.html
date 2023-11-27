@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo"> Nike</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+              <img src="../img/logo.png" alt="">
+                <h1 class="logo">Nike</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a  class="boton-menu boton-categoria active" href="../index.html">
+                            <button id="todos" class="boton-menu boton-categoria active"><i class="fa-solid fa-bag-shopping"></i> Seguir Comprando</button>
+                        </a>
+                        
+                    </li>
+                   
+                    <li>
+                            <button id="Mujer" class="boton-menu boton-categoria"><i class="fa-solid fa-person"></i>Masculino</button>    
+                    </li>
+                    
+                    <li>
+                            <button id="Contacto" class="boton-menu boton-categoria"><i class="fa-solid fa-person-dress"></i>Femenino</button>
+                    </li>
+                    
+                    <li>
+                        <a class="boton-menu boton-carrito" href="../paginas/carrito.html">
+                          <i class="fa-solid fa-cart-shopping"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+           
+        </aside>
+        <main>
+            <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="validationServer01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control is-valid" id="validationServer01" value="Wiston" required>
+                  
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServer02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control is-valid" id="validationServer02" value="Diaz" required>
+                  
+                </div>
+                <div class="col-md-4">
+                  <label for="validationServerEmail" class="form-label">Email</label>
+                  <div class="input-group has-validation">
+                    <input type="email" class="form-control is-invalid" id="validationServer" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                      Indique un correo valido.
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">enviar</button>
+                </div>
+              </form>
+        </main>
+    </div>
+    <footer>
+        <p class="texto-footer">© 2023 Nike</p>
+        <p class="texto-footer">042431758478</p>
+        <p class="texto-footer">Caracas/Venezuela</p>
+    
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

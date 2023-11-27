@@ -1,0 +1,161 @@
+{"productos": [
+        {
+            "id": "camisa-01",
+            "titulo": "camisa 1",
+            "imagen": "/img/camisa1.jpeg",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id": "hombre"
+            },
+            "precio": "40"
+        },
+        {
+            "id": "camisa-02",
+            "titulo": "camisa 2",
+            "imagen": "/img/camisa2.jpeg",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id": "hombre"    
+            },       
+            "precio": "40"
+        },  
+
+        {
+            "id": "camisa-02",
+           "titulo": "camisa 2",
+            "imagen": "/img/camisa3.jpeg",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id": "hombre"
+            },
+            "precio": "30"
+        },
+        {
+        
+            "id": "camisa-02",
+            "titulo": "camisa 2",
+            "imagen": "/img/camisa4.jpeg",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id": "hombre"
+            },
+            "precio": "30"
+        }, 
+        
+        {
+            
+            "id": "camisa-04",
+            "titulo": "conjunto nike",
+            "imagen": "/img/camisa4.jpeg",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id": "hombre"
+            },
+            "precio": "100"
+        },
+        {
+            "id":"zapato-01",
+            "titulo": "Calzado Nike Masculino 1",
+            "imagen": "/img/zapatoh1.jpeg",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id": "hombre"
+            },
+            "precio": "100"
+        },
+        {
+            "id": "zapato-02",
+            "titulo": "Calzado Nike Masculino 2",
+            "imagen": "/img/zapatoh2.jpg",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id": "hombre"
+            },
+            "precio": "200"
+        },
+        {
+            
+            "id": "zapato-03",
+            "titulo": "Calzado nike masculino 3",
+            "imagen": "/img/zapatoh3.webp",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id": "hombre"
+            },
+            "precio": "300"
+        }, 
+        {
+            "id": "zapato-04",
+            "titulo": "Calzado nike masculino 4",
+            "imagen": "/img/zapatoh4.webp",
+            "categoria": {
+               "nombre": "todos los productos",
+               "id": "hombre"
+            },
+           "precio": "400" 
+        },
+        {
+            "id": "zapato-05",
+            "titulo": "calzado nike masculino 5",
+           "imagen": "/img/zapatoh5.webp",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id": "hombre"
+            },
+            "precio": 500
+        },
+        {
+           "id": "zapato-06-",
+            "titulo": "Calzado nike femenino 1",
+            "imagen": "/img/zapatom1.jpeg",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id": "mujer"
+            },
+            "precio": "100"
+        },
+        {
+            
+            "id": "zapato-07",
+            "titulo": "Calzado nike femenino 2",
+            "imagen": "/img/zapatom2.jpg",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id": "mujer"
+            },
+            "precio": "200"
+        },
+        {
+            "id": "zapato-08",
+            "titulo": "Calzado nike femenino 3",
+            "imagen": "/img/zapatom3.jpeg",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id" :"mujer"
+            },
+            "precio": "300" 
+        },
+        {
+            "id": "zapato-09",
+            "titulo": "Calazado nike femenino 4",
+            "imagen": "/img/zapatoh4.webp",
+            "categoria": {
+                "nombre": "todos los productos",
+               "id": "mujer"
+            },
+            "precio": "400"
+        },  
+        {
+            "id": "zapato-010",
+            "titulo": "Calzado nike femenino",
+            "imagen": "/img/zapatom5.webp",
+            "categoria": {
+                "nombre": "todos los productos",
+                "id": "mujer"
+            },
+            "precio": "500"
+        }   
+
+
+    
+]}
