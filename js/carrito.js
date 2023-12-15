@@ -1,5 +1,3 @@
-// const productos = JSON.parse(localStorage.getItem("carrito"));
-
 const modelar = function (productos, orden) {
   const datacontainer = document.getElementById("contenedor-carrito");
   datacontainer.innerHTML = "";

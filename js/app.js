@@ -1,57 +1,67 @@
-let productos = [];
+let productosData = [];
 
-fetch("/js/productos.json")
-  .then((response) => response.json())
-  .then((data) => {
-    productos = data.productos;
-  })
-  .catch((error) => {
-    console.error("Error:", error);
-  });
-
-let toogle = document.getElementById("toogle");
-toogle.addEventListener("click", (event) => {
-  let checked = event.target.checked;
-  localStorage.setItem("dark-mode", checked);
-  darkMode();
-});
-
-const darkMode = function () {
-  const state = document.body.classList.value;
-
-  if (state === "dark-mode") {
-    document.body.classList.remove("dark-mode");
-  } else {
-    document.body.classList.add("dark-mode");
+const obtenerProductos = async () => {
+  try {
+    const response = await fetch("/js/productos.json");
+    const data = await response.json();
+    productosData = data.productos;
+  } catch (error) {
+    console.error("Error al obtener productos:", error);
   }
 };
-darkMode();
 
-const numerito = function () {
-  const carro = document.getElementById("numerito");
-  carro.textContent = JSON.parse(localStorage.getItem("carrito"))?.length;
+const configurarModoOscuro = () => {
+  const toogle = document.getElementById("toogle");
+
+  const darkMode = () => {
+    document.body.classList.toggle("dark-mode");
+  };
+
+  if (toogle) {
+    toogle.addEventListener("click", () => {
+      const checked = toogle.checked;
+      localStorage.setItem("dark-mode", checked);
+      darkMode();
+    });
+
+    darkMode();
+  }
 };
-const button2 = document.getElementById("agregar2");
-button2.addEventListener("click", (e) => {
-  agregar(14);
-});
-const button = document.getElementById("agregar1");
-button.addEventListener("click", (e) => {
-  agregar(12);
-});
-const agregar = function (ref) {
-  const prev = [];
-  if (localStorage.getItem("carrito")) {
-    const prev2 = JSON.parse(localStorage.getItem("carrito"));
-    prev2.map((producto) => {
-      prev.push(producto);
+
+const actualizarContadorCarrito = () => {
+  const carro = document.getElementById("numerito");
+  if (carro) {
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    carro.textContent = carrito.length;
+  }
+};
+
+const agregarAlCarrito = (ref) => {
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  carrito.push(productosData[ref]);
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  actualizarContadorCarrito();
+};
+
+const inicializarApp = async () => {
+  await obtenerProductos();
+  configurarModoOscuro();
+
+  const button2 = document.getElementById("agregar2");
+  if (button2) {
+    button2.addEventListener("click", () => {
+      agregarAlCarrito(14);
     });
   }
 
-  prev.push(productos[ref]);
-  localStorage.setItem("carrito", JSON.stringify(prev));
+  const button = document.getElementById("agregar1");
+  if (button) {
+    button.addEventListener("click", () => {
+      agregarAlCarrito(12);
+    });
+  }
 
-  numerito();
+  actualizarContadorCarrito();
 };
 
-numerito();
+document.addEventListener("DOMContentLoaded", inicializarApp);
