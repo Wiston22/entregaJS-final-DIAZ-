@@ -15,7 +15,6 @@ const modelar = function (productos, orden) {
       imagenElement.src = `${element.imagen}`;
       producto.appendChild(imagenElement);
 
-      // titulo
       const details = document.createElement("div");
       details.classList.add("carrito-producto-titulo");
       const small1 = document.createElement("small");
@@ -26,7 +25,7 @@ const modelar = function (productos, orden) {
       title.textContent = element.titulo;
       details.appendChild(title);
       producto.appendChild(details);
-      // cantidad
+
       const quantity = document.createElement("div");
       quantity.classList.add("carrito-producto-cantidad");
 
@@ -40,7 +39,6 @@ const modelar = function (productos, orden) {
       quantity.appendChild(quantityORIGI);
       producto.appendChild(quantity);
 
-      // precio
       const price = document.createElement("div");
       quantity.classList.add("carrito-producto-precio");
       const small2 = document.createElement("small");
@@ -53,7 +51,6 @@ const modelar = function (productos, orden) {
       price.appendChild(priceOrigi);
       producto.appendChild(details);
 
-      //   subtotal
       const subtotal = document.createElement("div");
       subtotal.classList.add("producto-precio-subtotal");
       const small3 = document.createElement("small");
